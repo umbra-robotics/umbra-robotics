@@ -1,17 +1,19 @@
 # umbra robotics
 
-Autonomous manipulation on commodity hardware. We train visuomotor policies (ACT) that run on sub-$500 robot arms.
+We train cheap robot arms to do repetitive manual tasks that humans currently do by hand.
 
-### Approach
+The robot learns by watching a human do the task, then practices on its own. No programming required per task — just demonstration and training.
 
-- End-to-end imitation learning — raw pixels to joint actions, no hand-coded primitives
-- Self-supervising data loop — deployed robots generate and auto-label their own training data
-- Hardware-agnostic — the policy transfers across arms; we ship software, not hardware
+### How it works
+
+- A human demonstrates the task a few times using a teleoperated robot arm
+- We train a neural network (Action Chunking Transformer) to reproduce the motion from camera input
+- The robot runs the learned policy autonomously on a ~$500 arm
 
 ### Stack
 
-Action Chunking Transformers · LeRobot · visuomotor policies · domain randomization · vision-based auto-grading
+LeRobot · ACT · SO-100 arm
 
 ### Info
 
-Northern Germany · founded by a mechanical engineer with a background in geometric deep learning
+Northern Germany · early stage
