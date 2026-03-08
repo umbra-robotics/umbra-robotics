@@ -10,10 +10,4 @@ The robot learns by watching a human do the task, then practices on its own. No 
 - We train a neural network (Action Chunking Transformer) to reproduce the motion from camera input
 - The robot runs the learned policy autonomously on a ~$500 arm
 
-### Stack
-
-LeRobot · ACT · SO-100 arm
-
-### Info
-
 Northern Germany · early stage
