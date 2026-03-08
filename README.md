@@ -1,27 +1,17 @@
 # umbra robotics
 
-**Teaching cheap robots to do hard things.**
+Autonomous manipulation on commodity hardware. We train visuomotor policies (ACT) that run on sub-$500 robot arms.
 
-We're building AI software that turns commodity robot arms into skilled autonomous workers. The intelligence lives in the model, not the hardware — if an arm breaks, swap it. The brain carries over.
+### Approach
 
-### What we do
+- End-to-end imitation learning — raw pixels to joint actions, no hand-coded primitives
+- Self-supervising data loop — deployed robots generate and auto-label their own training data
+- Hardware-agnostic — the policy transfers across arms; we ship software, not hardware
 
-- **Imitation learning on off-the-shelf hardware** — visuomotor policies that give sub-$500 arms human-level dexterity for delicate manipulation tasks
-- **Self-supervising data pipeline** — deployed robots generate their own training data, scored by an autonomous vision model, no human labeling required
-- **Software, not hardware** — we sell the intelligence layer as a service; hardware ships at cost
+### Stack
 
-### The moat
+Action Chunking Transformers · LeRobot · visuomotor policies · domain randomization · vision-based auto-grading
 
-Every robot in the field collects real-world data. More deployments means a better model means more deployments. This data flywheel compounds over time and gets harder to replicate.
+### Info
 
-### Tech stack
-
-Imitation learning (Action Chunking Transformers) · LeRobot · end-to-end visuomotor policies · domain randomization · self-grading vision models
-
-### About
-
-umbra robotics is based in northern Germany. Founded by a mechanical engineer with a background in geometric deep learning and industrial-scale engineering.
-
----
-
-*We're early and building fast. Watch this space.*
+Northern Germany · founded by a mechanical engineer with a background in geometric deep learning
